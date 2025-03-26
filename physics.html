@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>physics testing</title>
+		<style>
+			body {
+				display: grid;
+				background-color: black;
+				height: 100vh;
+				margin: 0 15px;
+				color: white;
+				font-family: Arial;
+			}
+			#instructions {
+				padding-top: 15px;
+			}
+			#display {
+				align-self: center;
+				justify-self: center;
+				border: 1px solid black;
+				background-color: white;
+			}
+			#buttons {
+				display: flex;
+				justify-content: center;
+			}
+			button {
+				width: fit-content;
+				min-width: 50px;
+				height: 25px;
+				border: none;
+				margin: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="instructions">
+			Use WASD to control nodes.
+		</div>
+		<svg
+			id="display"
+			width="800"
+			height="800"
+			xmlns="http://www.w3.org/2000/svg"
+		></svg>
+		<div id="buttons">
+			<button id="resetbutton">Reset</button>
+			<button id="addnodebutton">Add node</button>
+		</div>
+		<script src="scripts/physics.js"></script>
+	</body>
+</html>
