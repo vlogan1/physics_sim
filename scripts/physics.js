@@ -237,7 +237,7 @@ function gameTick() {
 
 //run
 gameStart();
-setInterval(gameTick, 1000 / 144);
+setInterval(gameTick, 1000 / 60);
 
 //ui
 //reset button
